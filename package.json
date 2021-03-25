@@ -11,6 +11,7 @@
         "axios": "^0.21.1",
         "core-js": "^3.6.5",
         "vue": "^2.6.11",
+        "vue-multiselect": "^2.1.6",
         "vue-plyr": "^7.0.0",
         "vue-ripple-directive": "github:PygmySlowLoris/vue-ripple-directive#pull/31/head",
         "vue-router": "^3.5.1",
@@ -26,7 +27,8 @@
         "eslint-plugin-vue": "^7.0.0-0",
         "raw-loader": "^4.0.2",
         "sass": "^1.32.0",
-        "sass-loader": "^10.1.0"
+        "sass-loader": "^10.1.0",
+        "vue-template-compiler": "^2.6.12"
     },
     "eslintConfig": {
         "root": true,

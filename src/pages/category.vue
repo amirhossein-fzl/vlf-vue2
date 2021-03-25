@@ -5,11 +5,12 @@
             <h1 class="mt-5 course-page-title">ارز دیجیتال</h1>
             <Breadcrumb class="mt-3" :items="Bitems" active="ارز دیجیتال" />
 
-            <div class="side-card mt-5 cat-box">
+            <div class="side-card mt-5 cat-box d-flex justify-content-between">
                 <div class="search-group-cat">
                     <input type="text" placeholder="جست و جو ..." />
                     <button><i class="fas fa-search"></i></button>
                 </div>
+                <multiselect v-model="value" dir="rtl" selectLabel="" deselectLabel="" selectedLabel="انتخاب شده" placeholder="-- مرتب سازی بر اساس --" :options="options"></multiselect>
             </div>
 
             <div class="row">
@@ -64,6 +65,7 @@
     import Footer from "../components/sections/footer";
     import Breadcrumb from "../components/sections/breadcrumb";
     import CourseCard from "../components/course-card";
+    import Multiselect from 'vue-multiselect';
     export default {
         name: "Category",
         components: {
@@ -71,6 +73,7 @@
             Footer,
             Breadcrumb,
             CourseCard,
+            Multiselect,
         },
         data() {
             return {
@@ -84,8 +87,18 @@
                         link: "#",
                     },
                 ],
+                options: [
+                    "محبوب ترین",
+                    "پرفروش ترین",
+                    "پر بازدید ترین",
+                    "تاریخ انتشار",
+                    "رایگان",
+                    "خریدنی"
+                ],
+                value: '',
             };
         },
     };
 </script>
 
+<style src="vue-multiselect/dist/vue-multiselect.min.css"></style>
