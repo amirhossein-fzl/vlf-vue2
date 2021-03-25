@@ -8,6 +8,7 @@ import Login from "./pages/auth/login.vue";
 import TeacherPage from "./pages/teacher-page.vue";
 import CoursePage from "./pages/course-page.vue";
 import Category from "./pages/category.vue";
+import Profile from "./pages/auth/profile.vue";
 
 let routes = [
     {
@@ -54,6 +55,11 @@ let routes = [
         path: '/category/:category',
         name: 'category',
         component: Category
+    },
+    {
+        path: '/profile',
+        name: 'profile',
+        component: Profile
     },
 ];
 

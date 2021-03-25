@@ -1509,6 +1509,56 @@ textarea {
     background: #4361ee;
 }
 
+.profile-sidebar {
+    border-radius: 4px;
+    box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.25);
+    padding: 10px 5px;
+}
+
+.profile-img {
+    border-radius: 50%;
+    width: 120px;
+    display: block;
+    margin: 10px auto 5px;
+}
+
+.profile-name {
+    font-size: 14px;
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    color: rgb(26, 26, 26);
+}
+
+.profile-menu {
+    padding: 0;
+    list-style: none;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-menu li {
+    color: #2d2d2d;
+    font-size: 15px;
+    padding: 4px 6px;
+    background-color: #fbfbfb;
+    margin-top: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.profile-menu li.active {
+    background-color: #4361ee;
+    color: #fff;
+}
+
+.profile-content {
+    border-radius: 4px;
+    box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.25);
+    padding: 10px 5px;
+}
+
 @media only screen and (max-width: 768px) {
     .container {
         width: 90%;
