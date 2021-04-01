@@ -11,6 +11,7 @@ import Category from "./pages/category.vue";
 import Profile from "./pages/auth/profile/profile.vue";
 import Dashboard from "./pages/auth/profile/dashboard.vue";
 import ProfileCourses from './pages/auth/profile/courses.vue';
+import BecomeTeacherProfile from "./pages/auth/profile/become-teacher.vue";
 
 let routes = [
     {
@@ -70,7 +71,11 @@ let routes = [
             {
                 path: '/courses',
                 component: ProfileCourses,
-            }
+            },
+            {
+                path: '/become-teacher',
+                component: BecomeTeacherProfile,
+            },
         ],
     },
 ];

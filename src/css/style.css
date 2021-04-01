@@ -1609,6 +1609,19 @@ textarea {
     display: block;
 }
 
+.become-teacher-profile i {
+    color: #4361ee;
+    font-size: 190px;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.become-teacher-profile p {
+    text-align: center;
+    margin-top: 25px;
+}
+
 @media only screen and (max-width: 768px) {
     .container {
         width: 90%;
