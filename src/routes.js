@@ -8,7 +8,8 @@ import Login from "./pages/auth/login.vue";
 import TeacherPage from "./pages/teacher-page.vue";
 import CoursePage from "./pages/course-page.vue";
 import Category from "./pages/category.vue";
-import Profile from "./pages/auth/profile.vue";
+import Profile from "./pages/auth/profile/profile.vue";
+import Dashboard from "./pages/auth/profile/dashboard.vue";
 
 let routes = [
     {
@@ -59,7 +60,13 @@ let routes = [
     {
         path: '/profile',
         name: 'profile',
-        component: Profile
+        component: Profile,
+        children: [
+            {
+                path: '/',
+                component: Dashboard,
+            }
+        ],
     },
 ];
 
