@@ -10,6 +10,7 @@ import CoursePage from "./pages/course-page.vue";
 import Category from "./pages/category.vue";
 import Profile from "./pages/auth/profile/profile.vue";
 import Dashboard from "./pages/auth/profile/dashboard.vue";
+import ProfileCourses from './pages/auth/profile/courses.vue';
 
 let routes = [
     {
@@ -65,6 +66,10 @@ let routes = [
             {
                 path: '/',
                 component: Dashboard,
+            },
+            {
+                path: '/courses',
+                component: ProfileCourses,
             }
         ],
     },

@@ -50,6 +50,7 @@ body {
 
 a {
     text-decoration: none;
+    color: #4361ee;
 }
 
 .btn {
@@ -1586,6 +1587,26 @@ textarea {
 
 .prof-inf {
     font-size: 14px;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.profile-courses table, .profile-courses td, .profile-courses th {
+    text-align: center;
+    border: 1px solid #e2e2e2;
+    border-collapse: collapse;
+}
+
+.profile-courses td, .profile-courses th {
+    padding: 12px;
+}
+
+.alt-dngpf {
+    color: #e71d36;
+    margin: 0px 10px 20px 0px;
+    display: block;
 }
 
 @media only screen and (max-width: 768px) {
